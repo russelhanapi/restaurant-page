@@ -1,7 +1,10 @@
 import "./style.css";
+import { renderHeader } from "./modules/header";
 import { renderHomePage } from "./modules/home";
 import { renderMenuPage } from "./modules/menu";
 import { renderContactPage } from "./modules/contact";
+
+renderHeader();
 
 const content = document.querySelector("#content");
 const homeTab = document.querySelector("#home-tab");
