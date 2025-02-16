@@ -138,3 +138,17 @@ body {
   font-weight: 500;
   justify-self: end;
 }
+
+/* Contact Module */
+.contact-list {
+  gap: 2.4rem;
+}
+
+.contact-list-item {
+  display: flex;
+  column-gap: 1.2rem;
+}
+
+.contact-list-item span {
+  font-weight: 600;
+}
