@@ -17,12 +17,15 @@ export const renderContactPage = function () {
   const contactEntries = Object.entries(contact);
   contactEntries.forEach(([key, value]) => {
     const property = key.replace(key[0], key[0].toUpperCase());
-    const html = `<li class="contact-list-item">
+    const html = `<li class="contact-list-item list">
         ${property}:
         <span class="contact-${key}">
         ${value}
         </span>
       </li>`;
-    content.insertAdjacentHTML("beforeend", html);
+    listMenu.insertAdjacentHTML("beforeend", html);
   });
+
+  containerMenu.appendChild(listMenu);
+  content.append(containerMenu);
 };
